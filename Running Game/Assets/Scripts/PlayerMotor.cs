@@ -14,7 +14,7 @@ public class PlayerMotor : MonoBehaviour {
     float jumpForce = 8.0f;
     float gravity = 12f;
     float verticalVelocity;
-    float speed = 7f;
+    float speed = 15f;
     float sideSpeed = 7f;
     int desiredLane = 0;
 
@@ -109,6 +109,11 @@ public class PlayerMotor : MonoBehaviour {
             Destroy(other.gameObject);
             gm.Coin();
         }
+        if(other.gameObject.tag == "Ramp") {
+
+            RampJump();
+            Invoke("StopRampJump", 1.5f);
+        }
     }
     void StartSliding() {
         //anim.setbool(sliding,true)
@@ -131,5 +136,14 @@ public class PlayerMotor : MonoBehaviour {
                 Crash();
                 break;
         }
+    }
+    void RampJump() {
+        gravity *= 0f; 
+        
+    }
+    void StopRampJump() {
+        gravity = 12f;
+       
+
     }
 }
