@@ -25,11 +25,11 @@ public class SwipingController : MonoBehaviour
         
             if(Input.GetMouseButtonDown(0)) {
             tap = true;
-            isDragging = true;
+          //  isDragging = true;
             startTouch = Input.mousePosition;
             
         }else if (Input.GetMouseButtonUp(0)) {
-            isDragging = false;
+           // isDragging = false;
             Reset();
         }
         //mobile Inputs
@@ -39,7 +39,7 @@ public class SwipingController : MonoBehaviour
                 startTouch = Input.touches[0].position;
             } else if (Input.touches[0].phase == TouchPhase.Ended || Input.touches[0].phase == TouchPhase.Canceled) {
                startTouch = swipeDelta = Vector2.zero;
-                isDragging = false;
+             //   isDragging = false;
                 Reset();
             }
         }
@@ -89,7 +89,7 @@ public class SwipingController : MonoBehaviour
 
     private void Reset() {
         startTouch = swipeDelta = Vector2.zero;
-        isDragging = false;
+       // isDragging = false;
     }
     public bool Tap { get { return tap; } }
     public Vector2 SwipeDelta { get { return swipeDelta; } }

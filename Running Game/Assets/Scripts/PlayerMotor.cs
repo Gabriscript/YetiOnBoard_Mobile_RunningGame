@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,11 +18,13 @@ public class PlayerMotor : MonoBehaviour {
     float speed = 15f;
     float sideSpeed = 7f;
     int desiredLane = 0;
-
+   
     GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
+
+        
         gm = FindObjectOfType<GameManager>();
         controller = GetComponent<CharacterController>();
       //  anim = GetComponent<Animator>();
@@ -86,7 +89,15 @@ public class PlayerMotor : MonoBehaviour {
         dir.y = 0;
        transform.forward = Vector3.Lerp(transform.forward,dir,TURN_SPEED);
 
+        if(gravity == 0 && !isGrounded) {
+            gm.EnableTrick();
+           
+            //if(swipe guessed)
+            //play animation
+            //play audio crowd cheering
+            
 
+        }
 
 
     }

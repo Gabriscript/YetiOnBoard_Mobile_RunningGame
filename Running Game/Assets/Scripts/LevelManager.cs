@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     //level Spawning
     private const float DISTANCE_BEFORE_SPAWN = 100f;
     private const int INITIAL_SEGMENTS = 10;
+    private const int INITIAL_TRANSITIONI_SEGMENTS = 2;//some empty room befor go in to the obsatcle
     private const int MAX_SEGMENTS_ON_SCREEN = 15;
     public Transform cameraContainer;
     private int amountOfActiveSegments;
@@ -43,6 +44,9 @@ public class LevelManager : MonoBehaviour
     }
     private void Start() {
         for (int i = 0; i < INITIAL_SEGMENTS; i++) {
+            if (i < INITIAL_TRANSITIONI_SEGMENTS)
+                SpawnTransition();
+            else
             GenerateSegment();
         }
     }
@@ -115,7 +119,7 @@ public class LevelManager : MonoBehaviour
     }
     public Segment GetSegment(int id,bool transition) {
         Segment s = null;
-        s = segments.Find(x => x.SegId == id && x.transition == transition && !x.gameObject.activeSelf);//searching inactive and in transition
+        s = segments.Find(x => x.SegId == id && x.transition == transition && !x.gameObject.activeSelf);//searching inactive and  transition
         if (s == null) {// if there is none we spawn them
             GameObject go = Instantiate((transition) ? availableTransition[id].gameObject : availableSegments[id].gameObject) as GameObject;//depending on our boolean transition we pick  transition or segments list and  spawn as GameObject
             s = go.GetComponent<Segment>();

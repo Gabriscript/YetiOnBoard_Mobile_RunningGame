@@ -2,13 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
+public enum Gesture {
+    left = 0,
+    up = 1,
+    right = 2,
+    down = 3
+}
 public class GameManager : MonoBehaviour {
     public int coins = 0;
     public float time = 0;
     [SerializeField] TextMeshProUGUI coinText;
     [SerializeField] TextMeshProUGUI timeText;
-    public Transform RepeatingPath;
+    //public Texture2D[] gestureicons;
+    const int nGestures = 4;
+    public GameObject[] currentGestureIcons;
+    int activeTrick = -1;
+
+    // public Transform RepeatingPath;
+    public Gesture gest;
     void Start() {
 
     }
@@ -16,7 +29,7 @@ public class GameManager : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         UpdateTime();
-        
+
     }
     public void Coin() {
         coins += 1;
@@ -34,9 +47,34 @@ public class GameManager : MonoBehaviour {
 
 
     void UpdateTime() {
-       time += Time.deltaTime;
-       timeText.text = time.ToString("0");
+        time += Time.deltaTime;
+        timeText.text = time.ToString("0");
     }
-}
+
+
+    public void EnableTrick() {
+
+
+        activeTrick = Random.Range(0, nGestures);
+        Gesture gest = (Gesture)activeTrick;
+
+       
+                currentGestureIcons[activeTrick].SetActive(true);
+       
+
+        }
+
+  
+
+        } 
+      
+
+        //currentGestureIcons.gameObject.SetActive(true);
+
+
+
+    //when grounded set back activetrick to -1
+    
+
 
 
