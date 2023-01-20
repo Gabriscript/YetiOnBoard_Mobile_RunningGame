@@ -1,7 +1,9 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerMotor : MonoBehaviour {
     [Header("Animation")]
@@ -18,7 +20,9 @@ public class PlayerMotor : MonoBehaviour {
     float speed = 15f;
     float sideSpeed = 7f;
     int desiredLane = 0;
-   
+  
+    
+
     GameManager gm;
     // Start is called before the first frame update
     void Start()
@@ -29,15 +33,20 @@ public class PlayerMotor : MonoBehaviour {
         controller = GetComponent<CharacterController>();
       //  anim = GetComponent<Animator>();
     }
-
+  
     // Update is called once per frame
     void Update()
     {   //inputs on wich lane should be
-        if (SwipingController.Instance.SwipeLeft)
+        if (SwipingController.Instance.SwipeLeft || Input.GetKeyDown(KeyCode.LeftArrow)) {
             MoveLane(false);
-
-        if (SwipingController.Instance.SwipeRight)
+        }
+        if (SwipingController.Instance.SwipeRight || Input.GetKeyDown(KeyCode.RightArrow)) {
             MoveLane(true);
+
+        }
+       
+
+
         //calculate where should be
         
         Vector3 targetPosition = transform.position.z * Vector3.forward + Vector3.right * desiredLane * LANE_DISTANCE;
@@ -57,12 +66,19 @@ public class PlayerMotor : MonoBehaviour {
 
         if (isGrounded) {
             verticalVelocity = -0.1f;
+            gm.DisableTrick();
            
-            if (SwipingController.Instance.SwipeUp) {
+
+
+            if (SwipingController.Instance.SwipeUp || Input.GetKeyDown(KeyCode.UpArrow)) {
                // anim.SetTrigger("Jump");
                 verticalVelocity = jumpForce;
+               
 
-            }else if (SwipingController.Instance.SwipeDown) {
+
+            } else if (SwipingController.Instance.SwipeDown || Input.GetKeyDown(KeyCode.DownArrow)) {
+
+               
 
                 StartSliding();
                 Invoke("StopSliding", 1f);
@@ -89,18 +105,39 @@ public class PlayerMotor : MonoBehaviour {
         dir.y = 0;
        transform.forward = Vector3.Lerp(transform.forward,dir,TURN_SPEED);
 
-        if(gravity == 0 && !isGrounded) {
-            gm.EnableTrick();
-           
-            //if(swipe guessed)
-            //play animation
-            //play audio crowd cheering
-            
+
+        //if(swipe guessed)
+        //play animation
+        //play audio crowd cheering
+
+        if (gravity == 0 && !isGrounded) {
+            if (gm.activeTrick == -1) {
+                gm.EnableTrick();
+
+
+
+            }
+
+            var gestureInputs = new bool[] { SwipingController.Instance.SwipeLeft, SwipingController.Instance.SwipeUp, SwipingController.Instance.SwipeRight };
+            if (gestureInputs[gm.activeTrick]) {
+
+
+                gm.DisableTrick();
+                
+                // Success!
+            }
+          
 
         }
 
+        /* {
+            gm.activeTrick = -1;
+            gm.DisableTrick();
+        }*/
+
 
     }
+   
     void MoveLane(bool goingRight) {
     desiredLane += (goingRight )? 1 : -1;
         desiredLane = Mathf.Clamp(desiredLane, -1, 1);

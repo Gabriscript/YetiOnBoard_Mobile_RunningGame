@@ -11,14 +11,16 @@ public enum Gesture {
     down = 3
 }
 public class GameManager : MonoBehaviour {
+
+   
     public int coins = 0;
     public float time = 0;
     [SerializeField] TextMeshProUGUI coinText;
     [SerializeField] TextMeshProUGUI timeText;
     //public Texture2D[] gestureicons;
-    const int nGestures = 4;
+    const int nGestures = 3;
     public GameObject[] currentGestureIcons;
-    int activeTrick = -1;
+    public int activeTrick = -1;
 
     // public Transform RepeatingPath;
     public Gesture gest;
@@ -29,6 +31,8 @@ public class GameManager : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         UpdateTime();
+
+       
 
     }
     public void Coin() {
@@ -60,10 +64,19 @@ public class GameManager : MonoBehaviour {
 
        
                 currentGestureIcons[activeTrick].SetActive(true);
+
+      //  if ( SwipingController.Instance.SwipeUp) 
        
 
         }
+    public void DisableTrick() {
 
+        if(activeTrick != -1)
+        currentGestureIcons[activeTrick].SetActive(false);
+
+        activeTrick = -1;
+
+    }
   
 
         } 
@@ -73,7 +86,7 @@ public class GameManager : MonoBehaviour {
 
 
 
-    //when grounded set back activetrick to -1
+    
     
 
 
