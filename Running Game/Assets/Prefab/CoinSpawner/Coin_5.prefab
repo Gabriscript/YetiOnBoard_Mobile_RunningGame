@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3892022883568349249}
   m_Layer: 0
   m_Name: Coin_5
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +35,7 @@ Transform:
   - {fileID: 5627253300601608148}
   - {fileID: 3057705021148049708}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3892022883568349249
 MonoBehaviour:

@@ -20,15 +20,15 @@ public class PlayerMotor : MonoBehaviour {
     float speed = 15f;
     float sideSpeed = 7f;
     int desiredLane = 0;
-  
-    
 
+
+    CoinsSpawner cs;
     GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
 
-        
+        cs = FindObjectOfType<CoinsSpawner>();
         gm = FindObjectOfType<GameManager>();
         controller = GetComponent<CharacterController>();
       //  anim = GetComponent<Animator>();
@@ -154,10 +154,10 @@ public class PlayerMotor : MonoBehaviour {
     }
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Coin") {
-            Destroy(other.gameObject);
+          other.gameObject.SetActive(false);
             gm.Coin();
         }
-        if(other.gameObject.tag == "Ramp") {
+        if (other.gameObject.tag == "Ramp") {
 
             RampJump();
             Invoke("StopRampJump", 1.5f);
@@ -175,7 +175,11 @@ public class PlayerMotor : MonoBehaviour {
     }
     void Crash() {
         //anim death
+        Invoke("CallGameOver", 3);
 
+    }
+    public void CallGameOver() {
+        FindObjectOfType<EndGame>().GameOverMenu();
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {

@@ -8,6 +8,8 @@ public class CoinsSpawner : MonoBehaviour
     public float chanceToSpawn = 0.5f;
     public bool forceSpawnAll = false;
 
+    GameManager gm;
+
     private GameObject[] coins;
 
     private void Awake() {
@@ -17,6 +19,8 @@ public class CoinsSpawner : MonoBehaviour
 
         }
         OnDisable();
+
+        gm = FindObjectOfType<GameManager>();
     }
 
     private void OnEnable() {
@@ -39,8 +43,9 @@ public class CoinsSpawner : MonoBehaviour
         }
         
     }
+   
 
-    private void OnDisable() {
+    public void OnDisable() {
 
         foreach (GameObject go in coins)
             if(go != null)

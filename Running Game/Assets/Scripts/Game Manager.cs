@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
+
 public enum Gesture {
     left = 0,
     up = 1,
@@ -12,7 +13,7 @@ public enum Gesture {
 }
 public class GameManager : MonoBehaviour {
 
-   
+
     public int coins = 0;
     public float time = 0;
     [SerializeField] TextMeshProUGUI coinText;
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour {
     void Update() {
         UpdateTime();
 
-       
+
 
     }
     public void Coin() {
@@ -62,24 +63,27 @@ public class GameManager : MonoBehaviour {
         activeTrick = Random.Range(0, nGestures);
         Gesture gest = (Gesture)activeTrick;
 
-       
-                currentGestureIcons[activeTrick].SetActive(true);
 
-      //  if ( SwipingController.Instance.SwipeUp) 
-       
+        currentGestureIcons[activeTrick].SetActive(true);
 
-        }
+        //  if ( SwipingController.Instance.SwipeUp) 
+
+
+    }
     public void DisableTrick() {
 
-        if(activeTrick != -1)
-        currentGestureIcons[activeTrick].SetActive(false);
+        if (activeTrick != -1)
+            currentGestureIcons[activeTrick].SetActive(false);
 
         activeTrick = -1;
 
     }
-  
 
-        } 
+
+
+
+  
+}
       
 
         //currentGestureIcons.gameObject.SetActive(true);
