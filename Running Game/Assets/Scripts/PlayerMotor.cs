@@ -20,6 +20,10 @@ public class PlayerMotor : MonoBehaviour {
     float speed = 15f;
     float sideSpeed = 7f;
     int desiredLane = 0;
+    bool isMoving = true;
+    float speedIncreaseLastTick;
+    float speedIncreasTime = 5f;
+    float speedIncreaseAmount = 0.1f;
 
 
     CoinsSpawner cs;
@@ -98,7 +102,20 @@ public class PlayerMotor : MonoBehaviour {
 
 
         //move player
-        controller.Move(moveVector * Time.deltaTime);
+        if (isMoving) {
+            controller.Move(moveVector * Time.deltaTime);
+
+
+            if(Time.time - speedIncreaseLastTick> speedIncreasTime) {
+                speedIncreaseLastTick = Time.time;
+                speed += speedIncreaseAmount;
+                sideSpeed += speedIncreaseAmount;
+            }
+
+
+
+
+        }
 
         //rotate charater where is going
        Vector3 dir = controller.velocity;
@@ -147,7 +164,7 @@ public class PlayerMotor : MonoBehaviour {
         Ray groundRay = new Ray(new Vector3(controller.bounds.center.x, (controller.bounds.center.y - controller.bounds.extents.y) + 0.2f,
             controller.bounds.center.z), Vector3.down);
 
-        Debug.DrawRay(groundRay.origin, groundRay.direction, Color.red, 1.0f);
+        Debug.DrawRay(groundRay.origin, groundRay.direction, Color.red, 10.0f);
         return (Physics.Raycast(groundRay, 0.2f + 0.1f));
 
         
@@ -176,6 +193,8 @@ public class PlayerMotor : MonoBehaviour {
     void Crash() {
         //anim death
         Invoke("CallGameOver", 3);
+        FindObjectOfType<glacierScript>().isScrolling = false;
+        isMoving = false;
 
     }
     public void CallGameOver() {
