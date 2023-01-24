@@ -129,7 +129,7 @@ Transform:
   - {fileID: 9167244664518045737}
   - {fileID: 6496701054890323819}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6057059274597341195
 MonoBehaviour:
@@ -218,6 +218,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626316265692468605, guid: 4ced5280e79ec0a4a9b2e85cf75fb285,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626316265692468605, guid: 4ced5280e79ec0a4a9b2e85cf75fb285,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -375,7 +385,7 @@ PrefabInstance:
     - target: {fileID: 3899380994318989673, guid: 4ced5280e79ec0a4a9b2e85cf75fb285,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.68
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3899380994318989673, guid: 4ced5280e79ec0a4a9b2e85cf75fb285,
         type: 3}
@@ -416,6 +426,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626316265692468605, guid: 4ced5280e79ec0a4a9b2e85cf75fb285,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626316265692468605, guid: 4ced5280e79ec0a4a9b2e85cf75fb285,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4626316265692468605, guid: 4ced5280e79ec0a4a9b2e85cf75fb285,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -495,6 +520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RampBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 2373686294955969888, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
     }
     public void UpdateCoinText() {
 
-        string update = "Coin :" + coins;
+        string update = "     x" + coins;
         if (coins <= 0) {
             update = "";
         }
@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour {
 
         currentGestureIcons[activeTrick].SetActive(true);
 
-        //  if ( SwipingController.Instance.SwipeUp) 
+      
 
 
     }

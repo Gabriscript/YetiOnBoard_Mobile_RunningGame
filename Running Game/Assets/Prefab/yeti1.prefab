@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 150dd0e5c774f9344b86b1fb6826f0b1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 150dd0e5c774f9344b86b1fb6826f0b1,
         type: 3}
@@ -31,17 +31,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 150dd0e5c774f9344b86b1fb6826f0b1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 150dd0e5c774f9344b86b1fb6826f0b1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.20000002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 150dd0e5c774f9344b86b1fb6826f0b1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.32000002
+      value: -8.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 150dd0e5c774f9344b86b1fb6826f0b1,
         type: 3}
@@ -81,7 +81,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 150dd0e5c774f9344b86b1fb6826f0b1,
         type: 3}
       propertyPath: m_Name
-      value: yeti1
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 150dd0e5c774f9344b86b1fb6826f0b1,
         type: 3}
@@ -104,10 +104,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1891466606}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 150dd0e5c774f9344b86b1fb6826f0b1,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1891466605}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 150dd0e5c774f9344b86b1fb6826f0b1,
         type: 3}
       insertIndex: -1
@@ -138,13 +134,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 5
+  m_Radius: 0.75
   m_SlopeLimit: 50
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &1891466607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,29 +165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e25270f33cb3df45809525479325c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &1891466605
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7295893175547179777}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.7489893
-  m_Height: 5.193627
-  m_Direction: 1
-  m_Center: {x: 0.21, y: 1.9878199, z: 0.24898927}
 --- !u!95 &-1883943502097886467
 Animator:
   serializedVersion: 5
