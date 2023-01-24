@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
     }
     public void UpdateCoinText() {
 
-        string update = "     x" + coins;
+        string update = "      x " + coins;
         if (coins <= 0) {
             update = "";
         }
