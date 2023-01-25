@@ -130,7 +130,7 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _curveAmount: 0.0003
+    - _curveAmount: 0.001
     m_Colors:
     - _BaseColor: {r: 1, g: 0.88837785, b: 0.33490568, a: 1}
     - _Color: {r: 1, g: 0.88837785, b: 0.33490565, a: 1}
