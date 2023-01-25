@@ -37,7 +37,7 @@ Transform:
   - {fileID: 2005359616826683962}
   - {fileID: 8887501734727424679}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5575313921881883466
 MonoBehaviour:
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: 0
-  lenght: 30
+  lenght: 35
   beginY1: 0
   beginY2: 0
   beginY3: 0
@@ -151,6 +151,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 12.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1860214224898289297, guid: 2dd1c4a344703bf40bc5f667bf78a624,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.96
+      objectReference: {fileID: 0}
     - target: {fileID: 3115967813608994943, guid: 2dd1c4a344703bf40bc5f667bf78a624,
         type: 3}
       propertyPath: m_RootOrder
@@ -215,6 +220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715188371441932422, guid: 2dd1c4a344703bf40bc5f667bf78a624,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8547438867121387310, guid: 2dd1c4a344703bf40bc5f667bf78a624,
         type: 3}

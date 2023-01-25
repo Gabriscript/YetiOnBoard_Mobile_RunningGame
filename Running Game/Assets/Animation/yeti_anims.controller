@@ -35,10 +35,7 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: IsGrounded
-    m_EventTreshold: 0
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6915091233890162647}
   m_Solo: 0
@@ -328,13 +325,13 @@ AnimatorStateMachine:
     m_Position: {x: 710, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3521043384465064073}
-    m_Position: {x: -120, y: 130, z: 0}
+    m_Position: {x: -100, y: 160, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1176633353648894580}
-    m_Position: {x: -130, y: 220, z: 0}
+    m_Position: {x: -250, y: 220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6915091233890162647}
-    m_Position: {x: -150, y: 50, z: 0}
+    m_Position: {x: -230, y: 70, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5224861177808605355}
     m_Position: {x: 490, y: -240, z: 0}
@@ -353,7 +350,7 @@ AnimatorStateMachine:
   m_ChildStateMachines:
   - serializedVersion: 1
     m_StateMachine: {fileID: -960069121661549863}
-    m_Position: {x: -400, y: -60, z: 0}
+    m_Position: {x: -280, y: -40, z: 0}
   m_AnyStateTransitions:
   - {fileID: 8339810937105020730}
   - {fileID: 4887697500097370909}
@@ -542,43 +539,43 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsGrounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Death
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsMoving
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: IsSliding
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: TricksJump
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: TricksIndex
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -856,6 +853,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: Jump
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: IsGrounded
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6915091233890162647}

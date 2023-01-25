@@ -42,7 +42,7 @@ Transform:
   - {fileID: 5765885924104789710}
   - {fileID: 233487521219393012}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2692489889630606591
 MonoBehaviour:
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: 0
-  lenght: 35
+  lenght: 50
   beginY1: 0
   beginY2: 0
   beginY3: 0

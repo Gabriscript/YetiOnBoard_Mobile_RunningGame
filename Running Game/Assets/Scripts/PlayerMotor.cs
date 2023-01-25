@@ -156,7 +156,7 @@ public class PlayerMotor : MonoBehaviour {
             if (gm.activeTrick == -1) {
                 gm.EnableTrick();
 
-                anim.SetInteger("TricksIndex", Random.Range(0, 3));//when you use random range with integer your last max value random index is escluded
+                anim.SetInteger("TricksIndex", Random.Range(0, 4));//when you use random range with integer your last max value random index is escluded
                 anim.SetTrigger("TricksJump");
 
 
@@ -177,6 +177,11 @@ public class PlayerMotor : MonoBehaviour {
         }
         wasGrounded = isGrounded;
      
+
+      if(  FindObjectOfType<PauseMenu>().GameIsPaused == true) {
+            SnowboardMoving.Pause();
+            FindObjectOfType<glacierScript>().isScrolling = false;
+        }
     }
    
     void MoveLane(bool goingRight) {
@@ -220,6 +225,7 @@ public class PlayerMotor : MonoBehaviour {
       
     }
     void Crash() {
+        SnowboardMoving.Stop();
         Die.Play();
         anim.SetTrigger("Death");
         Invoke("CallGameOver", 1);
