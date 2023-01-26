@@ -6,7 +6,7 @@ public class glacierScript : MonoBehaviour {
     //the algoritmh goona checking things behind us of us
     private const float DISTANCE_TO_RESPAWN = 1f;
 
-    public float scrollSpeed = -2;
+    public float scrollSpeed = -0.1f;
     public float totalLenght;
     public bool isScrolling { set; get; }
 
@@ -36,7 +36,7 @@ public class glacierScript : MonoBehaviour {
             transform.GetChild(0).localPosition += Vector3.forward * totalLenght;
             transform.GetChild(0).SetSiblingIndex(transform.childCount);//we push back in the list 
 
-           transform.GetChild(0).localPosition += Vector3.forward * totalLenght;
+          transform.GetChild(0).localPosition += Vector3.forward * totalLenght;
             transform.GetChild(0).SetSiblingIndex(transform.childCount);//repeated because we gonna move two object at the same time
 
            

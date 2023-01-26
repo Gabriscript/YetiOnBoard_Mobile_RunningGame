@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 4447847746052160924, guid: a3fc68c7a1a5e9a4c8defb161deac67b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.09
+      value: 6.36
       objectReference: {fileID: 0}
     - target: {fileID: 4447847746052160924, guid: a3fc68c7a1a5e9a4c8defb161deac67b,
         type: 3}
@@ -185,7 +185,7 @@ PrefabInstance:
     - target: {fileID: 8570287675756711609, guid: f97ac632242baa44288820aff8decbfc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.54
+      value: 15.810001
       objectReference: {fileID: 0}
     - target: {fileID: 8570287675756711609, guid: f97ac632242baa44288820aff8decbfc,
         type: 3}
@@ -227,6 +227,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: snowcliff 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9053387089350185987, guid: f97ac632242baa44288820aff8decbfc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -261,18 +266,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2355165403505784212, guid: e6a52c2a967f5cf41b85578188ba727e,
         type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.67046
+      objectReference: {fileID: 0}
+    - target: {fileID: 2355165403505784212, guid: e6a52c2a967f5cf41b85578188ba727e,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2355165403505784212, guid: e6a52c2a967f5cf41b85578188ba727e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.13
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 2355165403505784212, guid: e6a52c2a967f5cf41b85578188ba727e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.93
+      value: 3.94
       objectReference: {fileID: 0}
     - target: {fileID: 2355165403505784212, guid: e6a52c2a967f5cf41b85578188ba727e,
         type: 3}

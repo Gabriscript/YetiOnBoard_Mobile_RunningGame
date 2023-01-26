@@ -161,8 +161,8 @@ public class PlayerMotor : MonoBehaviour {
 
 
 
-                //  var gestureInputs = new bool[] { SwipingController.Instance.SwipeLeft, SwipingController.Instance.SwipeUp, SwipingController.Instance.SwipeRight };
-                //while (gestureInputs[gm.activeTrick]) {
+                 var gestureInputs = new bool[] { SwipingController.Instance.SwipeLeft, SwipingController.Instance.SwipeUp, SwipingController.Instance.SwipeRight };
+                while (gestureInputs[gm.activeTrick]) {
 
                 Crowd.PlayOneShot(Crowd.clip);
 
@@ -171,7 +171,7 @@ public class PlayerMotor : MonoBehaviour {
 
 
                    
-              //  }
+               }
             }
 
         }
