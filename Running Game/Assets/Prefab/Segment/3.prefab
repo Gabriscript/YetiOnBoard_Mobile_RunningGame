@@ -254,6 +254,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: snowcliff 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5164142582006152729, guid: ebcd7c73ec397da459316f4662a34033,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5539824456022729891, guid: ebcd7c73ec397da459316f4662a34033,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -555,12 +560,12 @@ PrefabInstance:
     - target: {fileID: 4877710008429980173, guid: 619871ba39e9bf24aa9fe2a779c2dfff,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.26
+      value: 5.52
       objectReference: {fileID: 0}
     - target: {fileID: 4877710008429980173, guid: 619871ba39e9bf24aa9fe2a779c2dfff,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.15
+      value: 8.76
       objectReference: {fileID: 0}
     - target: {fileID: 6816020250338997471, guid: 619871ba39e9bf24aa9fe2a779c2dfff,
         type: 3}
