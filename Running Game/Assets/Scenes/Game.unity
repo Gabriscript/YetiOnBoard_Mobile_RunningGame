@@ -407,7 +407,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 160.24, y: 60.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &147630396
 MonoBehaviour:
@@ -478,14 +478,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1441,7 +1441,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 160.24, y: 60.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &337150160
 MonoBehaviour:
@@ -1512,14 +1512,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1625,6 +1625,7 @@ GameObject:
   - component: {fileID: 377896963}
   - component: {fileID: 377896965}
   - component: {fileID: 377896964}
+  - component: {fileID: 377896966}
   m_Layer: 5
   m_Name: SnowFlakes (1)
   m_TagString: Untagged
@@ -1641,7 +1642,7 @@ RectTransform:
   m_GameObject: {fileID: 377896962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.53150004, y: 0.53150004, z: 0.53150004}
+  m_LocalScale: {x: 1, y: 1, z: 0.53150004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 147630395}
@@ -1673,8 +1674,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7094718bdac022428dd29244922d06b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1c5b3ac23ba6107478cbcbc9ace2c956, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1691,6 +1692,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377896962}
   m_CullTransparentMesh: 1
+--- !u!114 &377896966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377896962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f576840955a2c48ba35e7276f17add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &402921129 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 73982844296557596, guid: 7c41f9e0f5c0eaa4d96b5576d99ad1b7,
@@ -2222,7 +2235,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 160.24, y: 60.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &485512351
 MonoBehaviour:
@@ -2293,14 +2306,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2356,7 +2369,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 160.24, y: 60.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &565419202
 MonoBehaviour:
@@ -2427,14 +2440,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3034,7 +3047,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3122,6 +3135,7 @@ GameObject:
   - component: {fileID: 749217130}
   - component: {fileID: 749217132}
   - component: {fileID: 749217131}
+  - component: {fileID: 749217133}
   m_Layer: 5
   m_Name: SnowFlakes (3)
   m_TagString: Untagged
@@ -3138,7 +3152,7 @@ RectTransform:
   m_GameObject: {fileID: 749217129}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.53150004, y: 0.53150004, z: 0.53150004}
+  m_LocalScale: {x: 1, y: 1, z: 0.53150004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 927618355}
@@ -3170,8 +3184,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7094718bdac022428dd29244922d06b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1c5b3ac23ba6107478cbcbc9ace2c956, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3188,6 +3202,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749217129}
   m_CullTransparentMesh: 1
+--- !u!114 &749217133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749217129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f576840955a2c48ba35e7276f17add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &805675642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3541,13 +3567,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 42
+  m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3706,7 +3732,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 160.24, y: 60.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &927618356
 MonoBehaviour:
@@ -3777,14 +3803,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4330,7 +4356,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5289,6 +5315,7 @@ GameObject:
   - component: {fileID: 1328730637}
   - component: {fileID: 1328730639}
   - component: {fileID: 1328730638}
+  - component: {fileID: 1328730640}
   m_Layer: 5
   m_Name: SnowFlakes
   m_TagString: Untagged
@@ -5305,7 +5332,7 @@ RectTransform:
   m_GameObject: {fileID: 1328730636}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.53150004, y: 0.53150004, z: 0.53150004}
+  m_LocalScale: {x: 1, y: 1, z: 0.53150004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 337150159}
@@ -5337,8 +5364,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7094718bdac022428dd29244922d06b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1c5b3ac23ba6107478cbcbc9ace2c956, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5355,6 +5382,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328730636}
   m_CullTransparentMesh: 1
+--- !u!114 &1328730640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328730636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f576840955a2c48ba35e7276f17add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1348025342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5686118301320308458, guid: 07197e0d59a14074b81e2203bd395cf2,
@@ -5399,7 +5438,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 160.24, y: 60.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1360010192
 MonoBehaviour:
@@ -5470,14 +5509,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5512,6 +5551,7 @@ GameObject:
   - component: {fileID: 1371472424}
   - component: {fileID: 1371472426}
   - component: {fileID: 1371472425}
+  - component: {fileID: 1371472427}
   m_Layer: 5
   m_Name: SnowFlakes (5)
   m_TagString: Untagged
@@ -5528,7 +5568,7 @@ RectTransform:
   m_GameObject: {fileID: 1371472423}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.53150004, y: 0.53150004, z: 0.53150004}
+  m_LocalScale: {x: 1, y: 1, z: 0.53150004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1360010191}
@@ -5560,8 +5600,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7094718bdac022428dd29244922d06b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1c5b3ac23ba6107478cbcbc9ace2c956, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5578,6 +5618,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371472423}
   m_CullTransparentMesh: 1
+--- !u!114 &1371472427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371472423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f576840955a2c48ba35e7276f17add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1381648283
 GameObject:
   m_ObjectHideFlags: 0
@@ -5893,7 +5945,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6386,7 +6438,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6474,6 +6526,7 @@ GameObject:
   - component: {fileID: 1547506388}
   - component: {fileID: 1547506390}
   - component: {fileID: 1547506389}
+  - component: {fileID: 1547506391}
   m_Layer: 5
   m_Name: SnowFlakes (2)
   m_TagString: Untagged
@@ -6490,7 +6543,7 @@ RectTransform:
   m_GameObject: {fileID: 1547506387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.53150004, y: 0.53150004, z: 0.53150004}
+  m_LocalScale: {x: 1, y: 1, z: 0.53150004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 485512350}
@@ -6522,8 +6575,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7094718bdac022428dd29244922d06b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1c5b3ac23ba6107478cbcbc9ace2c956, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6540,6 +6593,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547506387}
   m_CullTransparentMesh: 1
+--- !u!114 &1547506391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547506387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f576840955a2c48ba35e7276f17add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1582903995
 GameObject:
   m_ObjectHideFlags: 0
@@ -6952,6 +7017,7 @@ GameObject:
   - component: {fileID: 1656099342}
   - component: {fileID: 1656099344}
   - component: {fileID: 1656099343}
+  - component: {fileID: 1656099345}
   m_Layer: 5
   m_Name: SnowFlakes (7)
   m_TagString: Untagged
@@ -6968,7 +7034,7 @@ RectTransform:
   m_GameObject: {fileID: 1656099341}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.53150004, y: 0.53150004, z: 0.53150004}
+  m_LocalScale: {x: 1, y: 1, z: 0.53150004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2104381303}
@@ -7000,8 +7066,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7094718bdac022428dd29244922d06b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1c5b3ac23ba6107478cbcbc9ace2c956, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7018,6 +7084,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656099341}
   m_CullTransparentMesh: 1
+--- !u!114 &1656099345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656099341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f576840955a2c48ba35e7276f17add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1665455188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6840880402296112628, guid: 4b56465a141b0f14caaf7cf718a262dd,
@@ -7062,7 +7140,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 160.24, y: 60.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1678546025
 MonoBehaviour:
@@ -7133,14 +7211,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7482,6 +7560,7 @@ GameObject:
   - component: {fileID: 1796633200}
   - component: {fileID: 1796633202}
   - component: {fileID: 1796633201}
+  - component: {fileID: 1796633203}
   m_Layer: 5
   m_Name: SnowFlakes (6)
   m_TagString: Untagged
@@ -7498,7 +7577,7 @@ RectTransform:
   m_GameObject: {fileID: 1796633199}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.53150004, y: 0.53150004, z: 0.53150004}
+  m_LocalScale: {x: 1, y: 1, z: 0.53150004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1678546024}
@@ -7530,8 +7609,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7094718bdac022428dd29244922d06b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1c5b3ac23ba6107478cbcbc9ace2c956, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7548,6 +7627,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796633199}
   m_CullTransparentMesh: 1
+--- !u!114 &1796633203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796633199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f576840955a2c48ba35e7276f17add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1801893575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 73982844296557596, guid: 7c41f9e0f5c0eaa4d96b5576d99ad1b7,
@@ -7578,7 +7669,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9056e41a553d07641b818fe7f069d766, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.604
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7674,7 +7765,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 986ee5dc7c6da26489c340f24ff67e90, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.782
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7770,7 +7861,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 229a7973a3b65124b97317040025cc61, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.416
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7866,7 +7957,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1589f21f7632e164db00d432cd2852da, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.072
+  m_Volume: 0.161
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7962,7 +8053,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 200f8d3413d62004a8c2a0427ff51d0e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.542
+  m_Volume: 0.245
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8058,10 +8149,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b2e5d5fb31339494686894103e4e8638, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -8447,6 +8538,7 @@ GameObject:
   - component: {fileID: 1881943380}
   - component: {fileID: 1881943382}
   - component: {fileID: 1881943381}
+  - component: {fileID: 1881943383}
   m_Layer: 5
   m_Name: SnowFlakes (4)
   m_TagString: Untagged
@@ -8463,7 +8555,7 @@ RectTransform:
   m_GameObject: {fileID: 1881943379}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.53150004, y: 0.53150004, z: 0.53150004}
+  m_LocalScale: {x: 1, y: 1, z: 0.53150004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 565419201}
@@ -8495,8 +8587,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d7094718bdac022428dd29244922d06b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1c5b3ac23ba6107478cbcbc9ace2c956, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8513,6 +8605,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881943379}
   m_CullTransparentMesh: 1
+--- !u!114 &1881943383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881943379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f576840955a2c48ba35e7276f17add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1897833658
 GameObject:
   m_ObjectHideFlags: 0
@@ -8571,7 +8675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8779,7 +8883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9939,7 +10043,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 160.24, y: 60.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104381304
 MonoBehaviour:
@@ -10010,14 +10114,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10066,17 +10170,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SHOW_COLLIDER: 1
   cameraContainer: {fileID: 330585546}
-  ramps:
-  - {fileID: 2294294855931041330, guid: 095e15e88c6a1d241a3462a5a9a5cc20, type: 3}
-  - {fileID: 3109236963622190010, guid: 2dd1c4a344703bf40bc5f667bf78a624, type: 3}
-  longBlocks:
-  - {fileID: 6967947218746624361, guid: a2b6dd85dd8711d47935fbf57cd3a3c2, type: 3}
-  jump:
-  - {fileID: 5478475340451636215, guid: a4669e15ab3b3e449876ddc76d78cb3d, type: 3}
-  slides:
-  - {fileID: 1116504249341637717, guid: ba3b585c847079e469209549eefd53dc, type: 3}
-  - {fileID: 1116504249341637717, guid: ba3b585c847079e469209549eefd53dc, type: 3}
-  - {fileID: 1116504249341637717, guid: ba3b585c847079e469209549eefd53dc, type: 3}
+  ramps: []
+  longBlocks: []
+  jump: []
+  slides: []
   pieces: []
   availableSegments:
   - {fileID: -8211170353776937179, guid: ca3056c12b596e94cb47a726c9b16a22, type: 3}

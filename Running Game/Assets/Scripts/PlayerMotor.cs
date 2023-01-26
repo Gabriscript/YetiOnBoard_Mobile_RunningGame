@@ -186,6 +186,7 @@ public class PlayerMotor : MonoBehaviour {
      
 
       if(  FindObjectOfType<PauseMenu>().GameIsPaused == true) {
+            MainTheme.volume = 0.01f;
             SnowboardMoving.Pause();
             FindObjectOfType<glacierScript>().isScrolling = false;
         }
@@ -238,6 +239,7 @@ public class PlayerMotor : MonoBehaviour {
         Invoke("CallGameOver", 1);
         FindObjectOfType<glacierScript>().isScrolling = false;
         isMoving = false;
+        MainTheme.volume = 0.01f;
 
     }
     public void CallGameOver() {
