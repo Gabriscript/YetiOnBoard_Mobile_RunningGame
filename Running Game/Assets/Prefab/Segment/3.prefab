@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: 0
-  lenght: 25
+  lenght: 35
   beginY1: 0
   beginY2: 0
   beginY3: 0

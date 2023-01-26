@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HighlightButton : MonoBehaviour
 {
     Color startColor = Color.white;
-    Color endColor = Color.blue;
+    Color endColor = Color.cyan;
     [Range(1, 10)] float speed = 1f;
 
     Image img;
