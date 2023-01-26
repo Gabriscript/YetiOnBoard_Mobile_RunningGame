@@ -37,6 +37,11 @@ public class PlayerMotor : MonoBehaviour {
     bool wasGrounded = false;
 
 
+
+
+    int buttonClick = 0;
+
+
     CoinsSpawner cs;
     GameManager gm;
 
@@ -86,9 +91,11 @@ public class PlayerMotor : MonoBehaviour {
         if (!wasGrounded && isGrounded) {
             gm.DisableTrick();
             SnowboardMoving.Play();
+            buttonClick = 0;
         }
         if (isGrounded) {
             verticalVelocity = -0.1f;
+           
 
 
 
@@ -152,27 +159,27 @@ public class PlayerMotor : MonoBehaviour {
         //play audio crowd cheering
 
         if (gravity == 0 && !isGrounded) {
-           
+
             if (gm.activeTrick == -1) {
                 gm.EnableTrick();
 
-                anim.SetInteger("TricksIndex", Random.Range(0, 4));//when you use random range with integer your last max value random index is escluded
-                anim.SetTrigger("TricksJump");
+            if (buttonClick == 1|| buttonClick == 2) {
+
+
+                    gm.SwitchoffButton();
+                    gm.EnableTrick();
 
 
 
-                 var gestureInputs = new bool[] { SwipingController.Instance.SwipeLeft, SwipingController.Instance.SwipeUp, SwipingController.Instance.SwipeRight };
-                while (gestureInputs[gm.activeTrick]) {
-
-                Crowd.PlayOneShot(Crowd.clip);
-
-                gm.coins += 50;
-                   
-
-
-                   
-               }
+                }
             }
+                   
+                   
+
+
+                   
+              
+            
 
         }
         wasGrounded = isGrounded;
@@ -253,4 +260,36 @@ public class PlayerMotor : MonoBehaviour {
        
 
     }
+    public void JumpSuccess() {
+        anim.SetInteger("TricksIndex", Random.Range(0, 4));//when you use random range with integer your last max value random index is escluded
+        anim.SetTrigger("TricksJump");
+
+       
+    Crowd.PlayOneShot(Crowd.clip);
+
+                gm.coins += 50;
+    }
+
+    public void ButtonPressed() {
+
+        buttonClick += 1;
+        if (buttonClick == 1 || buttonClick == 2) {
+
+
+            gm.SwitchoffButton();
+            gm.EnableTrick();
+
+
+
+        }
+       
+        if (buttonClick == 3) {
+            JumpSuccess();
+
+            buttonClick = 0;
+            gm.DisableTrick();
+        }
+    }
+
+
 }

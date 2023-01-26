@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour {
     [SerializeField] TextMeshProUGUI coinText;
     [SerializeField] TextMeshProUGUI timeText;
     //public Texture2D[] gestureicons;
-    const int nGestures = 3;
+    const int nGestures = 8;
     public GameObject[] currentGestureIcons;
     public int activeTrick = -1;
 
@@ -78,11 +78,19 @@ public class GameManager : MonoBehaviour {
         activeTrick = -1;
 
     }
+    public void SwitchoffButton() {
+
+        
+            currentGestureIcons[activeTrick].SetActive(false);
+
+       
+
+    }
 
 
 
 
-  
+
 }
       
 
