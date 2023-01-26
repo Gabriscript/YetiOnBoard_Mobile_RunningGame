@@ -521,10 +521,55 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.914092
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92391753
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.3825917
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -44.989
+      objectReference: {fileID: 0}
     - target: {fileID: 1901462538865149636, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
       propertyPath: m_Name
       value: RampBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 2318972415481100467, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3161842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2318972415481100467, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2318972415481100467, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.39
       objectReference: {fileID: 0}
     - target: {fileID: 2373686294955969888, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
