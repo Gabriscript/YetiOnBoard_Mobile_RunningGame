@@ -23,7 +23,7 @@ public class glacierScript : MonoBehaviour {
             return;
         }
 
-        scrolLocation += scrollSpeed + Time.deltaTime/2;//every frame we increament the value
+        scrolLocation += scrollSpeed + Time.deltaTime;//every frame we increament the value
         Vector3 newLocation = (playerTransform.position.z + scrolLocation) * Vector3.forward;//we calculate the next frame where will be
 
 

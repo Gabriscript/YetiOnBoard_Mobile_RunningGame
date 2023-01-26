@@ -84,7 +84,7 @@ PrefabInstance:
     - target: {fileID: 1303156132095875794, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.99
+      value: 19.54
       objectReference: {fileID: 0}
     - target: {fileID: 1303156132095875794, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
@@ -163,8 +163,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2318972415481100467, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2318972415481100467, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.46
+      value: 4.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760140858333524943, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -228,7 +238,7 @@ PrefabInstance:
     - target: {fileID: 3115967813608994943, guid: 2dd1c4a344703bf40bc5f667bf78a624,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.77
+      value: 21.32
       objectReference: {fileID: 0}
     - target: {fileID: 3115967813608994943, guid: 2dd1c4a344703bf40bc5f667bf78a624,
         type: 3}
@@ -280,6 +290,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: longBlockwalk (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8547438867121387310, guid: 2dd1c4a344703bf40bc5f667bf78a624,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6518764727043211829, guid: 2dd1c4a344703bf40bc5f667bf78a624, type: 3}
@@ -328,7 +343,7 @@ PrefabInstance:
     - target: {fileID: 3115967813608994943, guid: 2dd1c4a344703bf40bc5f667bf78a624,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.52
+      value: 19.07
       objectReference: {fileID: 0}
     - target: {fileID: 3115967813608994943, guid: 2dd1c4a344703bf40bc5f667bf78a624,
         type: 3}
@@ -374,6 +389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: longBlockwalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 8547438867121387310, guid: 2dd1c4a344703bf40bc5f667bf78a624,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8615155903437781276, guid: 2dd1c4a344703bf40bc5f667bf78a624,
         type: 3}
@@ -510,7 +530,7 @@ PrefabInstance:
     - target: {fileID: 1303156132095875794, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.12
+      value: 19.67
       objectReference: {fileID: 0}
     - target: {fileID: 1303156132095875794, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
@@ -591,6 +611,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 4.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 6760140858333524943, guid: 6866a4d9b4ac116419d8670e083556e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -720,7 +745,7 @@ PrefabInstance:
     - target: {fileID: 7279373827940141574, guid: d88972b7a0360304aa49467e3dfb8cb6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.92
+      value: 26.25
       objectReference: {fileID: 0}
     - target: {fileID: 7279373827940141574, guid: d88972b7a0360304aa49467e3dfb8cb6,
         type: 3}
@@ -799,7 +824,7 @@ PrefabInstance:
     - target: {fileID: 7279373827940141574, guid: d88972b7a0360304aa49467e3dfb8cb6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.46
+      value: 26.28
       objectReference: {fileID: 0}
     - target: {fileID: 7279373827940141574, guid: d88972b7a0360304aa49467e3dfb8cb6,
         type: 3}
