@@ -54,9 +54,9 @@ MonoBehaviour:
   beginY1: 0
   beginY2: 0
   beginY3: 0
-  endY1: 1
+  endY1: 0
   endY2: 0
-  endY3: 1
+  endY3: 0
 --- !u!1001 &157476902711606542
 PrefabInstance:
   m_ObjectHideFlags: 0

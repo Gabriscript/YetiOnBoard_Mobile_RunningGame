@@ -56,8 +56,8 @@ MonoBehaviour:
   beginY2: 0
   beginY3: 0
   endY1: 1
-  endY2: 0
-  endY3: 1
+  endY2: 1
+  endY3: 0
 --- !u!1001 &1478884933365626776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -604,7 +604,7 @@ PrefabInstance:
     - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.5
+      value: 3.52
       objectReference: {fileID: 0}
     - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
@@ -634,7 +634,7 @@ PrefabInstance:
     - target: {fileID: 2318972415481100467, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.49
+      value: 4.53
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -88,7 +88,12 @@ public class GameManager : MonoBehaviour {
     }
 
 
+    public void SwitchOffExplaination() {
 
+        time = +Time.time;
+        if (time == 3)
+            gameObject.SetActive(false);
+    }
 
 
 }

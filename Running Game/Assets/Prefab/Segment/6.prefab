@@ -148,9 +148,9 @@ MonoBehaviour:
   beginY1: 0
   beginY2: 0
   beginY3: 0
-  endY1: 1
-  endY2: 0
-  endY3: 1
+  endY1: 0
+  endY2: 1
+  endY3: 0
 --- !u!1001 &1728751367379203495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -524,17 +524,17 @@ PrefabInstance:
     - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.914092
+      value: 6.836022
       objectReference: {fileID: 0}
     - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.37
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.54
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: 1374385546621946121, guid: 6866a4d9b4ac116419d8670e083556e8,
         type: 3}
